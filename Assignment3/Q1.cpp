@@ -7,11 +7,14 @@ bool isSubset(int *a1, int *a2, int n, int m){
     if(m>n) return false;
     sort(a1,a1+n);
     sort(a2,a2+m);
-    for(int i=0;i<m;i++){
-        if(a2[i]!=a1[i])
-            return false;
+    int j=0;
+    for(int i=0;i<n && j<m;i++){
+        if(a2[j]==a1[i]){
+            j++;
+        }
     }
-    return true;
+    if(j==m) return true;
+    return false;
 }
 int main(){
     int n,m;

@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define N 4
+#define N 10
 int board[N][N];
 
 void printSolution(int board[N][N]){

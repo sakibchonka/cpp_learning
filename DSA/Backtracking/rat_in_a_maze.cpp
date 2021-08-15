@@ -46,8 +46,8 @@ bool solveMazeRec(int maze[N][N],int i,int j,int sol[N][N]){
 }
 
 int main(){
-    int maze[N][N] = {{1,0,0,0},
-                      {1,1,0,1},
+    int maze[N][N] = {{1,1,1,0},
+                      {0,1,0,1},
                       {0,1,0,0},
                       {1,1,1,1}};
     solveMaze(maze);
